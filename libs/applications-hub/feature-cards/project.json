@@ -1,0 +1,32 @@
+{
+  "name": "feature-cards",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/applications-hub/feature-cards/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": ["type:feature", "scope:applications-hub"],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/applications-hub/feature-cards/ng-package.json",
+        "tsConfig": "libs/applications-hub/feature-cards/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/applications-hub/feature-cards/tsconfig.lib.prod.json"
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/angular:unit-test",
+      "options": {}
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

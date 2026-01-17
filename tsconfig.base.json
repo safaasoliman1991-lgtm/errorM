@@ -14,7 +14,47 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@errormanagement/patientservices": [
+        "libs/applications/patientservices/src/index.ts"
+      ],
+      "@errormanagement/clinicalattachment": [
+        "libs/applications/clinicalattachment/src/index.ts"
+      ],
+      "@errormanagement/feature-cards": [
+        "libs/applications-hub/feature-cards/src/index.ts"
+      ],
+      "@errormanagement/data-access": [
+        "libs/applications-hub/data-access/src/index.ts"
+      ],
+      "@errormanagement/data-access-auth": [
+        "libs/auth/data-access/src/index.ts"
+      ],
+      "@errormanagement/feature-login": [
+        "libs/auth/feature-login/src/index.ts"
+      ],
+      "@errormanagement/shared/ui-services": [
+        "libs/shared/ui-services/src/index.ts"
+      ],
+      "@errormanagement/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@errormanagement/shared/util-config": [
+        "libs/shared/util-config/src/index.ts"
+      ],
+      "@errormanagement/shared/domain": ["libs/shared/domain/src/index.ts"],
+      "@errormanagement/shared/util-logging": [
+        "libs/shared/util-logging/src/index.ts"
+      ],
+      "@errormanagement/data-access-clinical": [
+        "libs/applications/clinicalattachment/src/lib/data-access/src/index.ts"
+      ],
+      "@errormanagement/data-access-patientservices": [
+        "libs/applications/patientservices/data-access/src/index.ts"
+      ],
+      "@errormanagement/shared/util-pagination": [
+        "libs/shared/util-pagination/src/index.ts"
+      ],
+      "@errormanagement/utils": ["libs/auth/utils/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

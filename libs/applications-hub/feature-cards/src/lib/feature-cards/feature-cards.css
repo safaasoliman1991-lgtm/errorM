@@ -1,0 +1,128 @@
+
+.card:hover::after {
+  opacity: 5;
+}
+.page-header {
+  background: white;
+  border-bottom: 1px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #212529;
+  margin: 0;
+}
+
+.page-subtitle {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin: 0.25rem 0 0 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.user-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #212529;
+}
+
+.user-role {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+/* Logout Button */
+.btn-logout {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  background: white;
+  color: #212529;
+  border: 1.5px solid #dee2e6;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-logout:hover {
+  background: #dc3545;
+  color: white;
+  border-color: #dc3545;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(220, 53, 69, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .btn-logout span {
+    display: none;
+  }
+}
+
+.bg-teal {
+  background-color: #20c997 !important;
+  color: white !important;
+}
+
+.bg-pink {
+  background-color: #d63384 !important;
+  color: white !important;
+}.bg-coral {
+    background-color: #ff7f50 !important;
+    color: #ffffff !important;
+}
+
+.bg-mint {
+    background-color: #2fd4f5 !important;
+    color: #1a1a1a !important; /* Dark text for light background */
+}
+
+.bg-navy {
+    background-color: #020290 !important;
+    color: #ffffff !important;
+}
+.bg-darkred {
+    background-color: #902102 !important;
+    color: #ffffff !important;
+}

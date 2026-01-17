@@ -1,0 +1,32 @@
+{
+  "name": "clinicalattachment",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/applications/clinicalattachment/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": ["type:clinicalattachment", "scope:applications"],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/applications/clinicalattachment/ng-package.json",
+        "tsConfig": "libs/applications/clinicalattachment/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/applications/clinicalattachment/tsconfig.lib.prod.json"
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/angular:unit-test",
+      "options": {}
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../../dist/libs/applications-hub/data-access",
+  "lib": {
+    "entryFile": "src/index.ts"
+  }
+}
